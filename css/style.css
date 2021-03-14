@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+body{
+   width: 100%;
+   height: 100vh;
+   margin: 0 auto;
+   padding: 10px;
+   background: url(/img/background-4.jpg);
+   background-position: top;
+}
+.wrapper{
+   background: #fff;
+   max-width: 400px;
+   width: 100%;
+   margin: 120px auto;
+   padding: 25px;
+   border-radius: 5px;
+   box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.wrapper h1{
+   text-align: center;
+   font-size: 30px;
+   font-weight: 600;
+}
+.wrapper .addTask{
+   margin: 10px 0;
+   width: 100%;
+   display: flex;
+   height: 45px;
+}
+.addTask input{
+   width: 85%;
+   height: 100%;
+   outline: none;
+   border-radius: 3px;
+   border: 1px solid #ccc;
+   font-size: 17px;
+   padding-left: 15px;
+   transition: all 0.3s ease;
+}
+.addTask .addButton{
+   width: 50px;
+   height: 100%;
+   border: none;
+   color: #fff;
+   margin-left: 5px;
+   font-size: 15px;
+   font-weight: 150;
+   outline: none;
+   background: #000;
+   cursor: pointer;
+   border-radius: 3px;
+   opacity: 0.1;
+   transition: 0.5s ease-out;
+}
+.addTask .inputTask:focus{
+   border-color: #000;
+}
+.addTask .addButton:hover{
+   opacity: 1;
+}
+/* .todo-list -> .todo-items -> .todo -> .task */
+.wrapper .todo-list{
+   max-height: 250px;    
+   overflow-y: auto;
+}
+.todo-items{
+   list-style: none;
+}
+.todo{
+   margin-top: 5px;
+   margin-bottom: 10px;
+   background: #eee;
+   border-radius: 3px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   transition: all 0.5s ease;
+}
+.todo .task{
+   flex: 1;  /**/
+   position: relative;  /**/
+   margin-left: 15px;
+   cursor: default;
+   background: #eee;
+   font-size: 16px;
+   overflow: hidden; 
+   scroll-behavior: smooth;
+   transition: 0.2s ease-in;
+   pointer-events:inherit;
+}
+.svg-inline--fa.fa-trash.fa-w-14, .svg-inline--fa.fa-w-16{
+   color: white;
+   width: 15px;
+   height: 15px;
+   pointer-events: none;
+}
+.checked, .remove{
+   margin-left: 3px;
+   border-radius: 3px;
+   width: 50px;
+   height: 50px;
+   cursor: pointer;
+   border-style: none;
+   background: rgb(231, 0, 0);
+}
+.checked{
+   background: rgb(0, 161, 0);
+}
+.remove:focus, .checked:focus{
+   outline: none;
+}
+.remove:hover{
+   background: rgb(255, 14, 14);
+}
+.checked:hover{
+   background: rgb(6, 201, 6);
+}
+.completed{
+   text-decoration: line-through;
+   opacity: 0.5;
+   font-weight: 300;
+}
+.clock{
+   display: block; /**/
+   position: absolute; /**/
+   top: 10%;
+   transform: translateX(50%); /**/
+   padding-left:.5em; /**/
+   padding-right:.5em; /**/
+   margin-left:auto; /**/
+   margin-right:auto; /**/
+   right:50%; /**/
+   color: #fff;
+   font-size: 20px;
+   font-family: 'Poppins', sans-serif;
+   letter-spacing: 3px;
+}
