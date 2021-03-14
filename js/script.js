@@ -34,7 +34,8 @@ function addNewTask(event){
   inputTask.value = "";
 }
 function removeTask(e){
-  event.preventDefault();
+  e.preventDefault();
+  
   const item = e.target || e.srcElement;
   if(item.classList[0] === 'remove'){
     const selectedItem = item.parentElement;

@@ -33,7 +33,7 @@ body{
    display: flex;
    height: 45px;
 }
-.addTask input{
+.addTask input{ /*text-box*/
    width: 85%;
    height: 100%;
    outline: none;
@@ -94,13 +94,13 @@ body{
    transition: 0.2s ease-in;
    pointer-events:inherit;
 }
-.svg-inline--fa.fa-trash.fa-w-14, .svg-inline--fa.fa-w-16{
+.svg-inline--fa.fa-trash.fa-w-14, .svg-inline--fa.fa-w-16{ /*font-awesome icons*/
    color: white;
    width: 15px;
    height: 15px;
    pointer-events: none;
 }
-.checked, .remove{
+.checked, .remove{ /*the buttons*/
    margin-left: 3px;
    border-radius: 3px;
    width: 50px;
