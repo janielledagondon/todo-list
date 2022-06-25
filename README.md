@@ -1,1 +1,3 @@
-# to-do_list
+# Simple to do list
+
+An activity from the forgotten subject
